@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Lindberg — Portfolio</title>
+  <meta name="description" content="Personlig portfolio och CV för Tim Lindberg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">DN</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Öppna meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#om-mig">Om mig</a>
+        <a href="#kompetenser">Kompetenser</a>
+        <a href="#projekt">Projekt</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Portfolio · <span id="location">Din stad</span></p>
+      <h1 class="hero__title">
+        Hej, jag heter<br><span class="hero__name">Tim Lindberg</span>.
+      </h1>
+      <p class="hero__subtitle">
+        Jag är <span class="hero__role">gymentusiast och styrketräningsnörd</span>
+        och det här är en samling av min träningsresa, mina mål och projekt.
+      </p>
+      <div class="hero__actions">
+        <a href="#projekt" class="btn btn--primary">Se mina projekt</a>
+        <a href="#kontakt" class="btn btn--ghost">Kontakta mig</a>
+      </div>
+    </div>
+    <div class="hero__meta">
+      <div class="hero__meta-line"><span>01</span> Om mig</div>
+      <div class="hero__meta-line"><span>02</span> Kompetenser</div>
+      <div class="hero__meta-line"><span>03</span> Projekt</div>
+      <div class="hero__meta-line"><span>04</span> Kontakt</div>
+    </div>
+  </section>
+
+  <!-- ===== OM MIG ===== -->
+  <section class="section" id="om-mig">
+    <div class="section__header">
+      <span class="section__index">01</span>
+      <h2>Om mig</h2>
+    </div>
+    <div class="about">
+      <p class="about__text">
+        Jag har tränat styrketräning i flera år och älskar allt som har med
+        gymkulturen att göra — från tunga marklyft till att bygga en bra
+        träningsrutin. Den här sidan är en samling av min resa, mina PB:n
+        och projekt kopplade till träning och hälsa.
+      </p>
+      <ul class="about__facts">
+        <li><strong>Utbildning</strong><span>Din skola / program</span></li>
+        <li><strong>Baserad i</strong><span>Din stad</span></li>
+        <li><strong>Intressen</strong><span>Styrketräning, kost, marklyft</span></li>
+        <li><strong>Mål</strong><span>Slå mitt PB i knäböj innan årsskiftet</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== KOMPETENSER ===== -->
+  <section class="section section--alt" id="kompetenser">
+    <div class="section__header">
+      <span class="section__index">02</span>
+      <h2>Kompetenser</h2>
+    </div>
+    <div class="skills">
+      <div class="skill">
+        <div class="skill__top"><span>Knäböj</span><span>85%</span></div>
+        <div class="skill__bar"><div class="skill__fill" style="--level:85%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill__top"><span>Marklyft</span><span>75%</span></div>
+        <div class="skill__bar"><div class="skill__fill" style="--level:75%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill__top"><span>Bänkpress</span><span>65%</span></div>
+        <div class="skill__bar"><div class="skill__fill" style="--level:65%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill__top"><span>Kondition</span><span>50%</span></div>
+        <div class="skill__bar"><div class="skill__fill" style="--level:50%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJEKT ===== -->
+  <section class="section" id="projekt">
+    <div class="section__header">
+      <span class="section__index">03</span>
+      <h2>Projekt</h2>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <div class="project__num">01</div>
+        <h3>12-veckors träningsprogram</h3>
+        <p>Ett eget upplagt program för styrkeuppbyggnad, uppdelat i push/pull/ben med progressiv överbelastning.</p>
+        <a href="#" class="project__link">Visa projekt →</a>
+      </article>
+      <article class="project">
+        <div class="project__num">02</div>
+        <h3>Träningsloggen</h3>
+        <p>Ett litet verktyg (byggt med HTML, CSS och JavaScript) för att logga vikter och reps mellan träningspass.</p>
+        <a href="#" class="project__link">Visa projekt →</a>
+      </article>
+      <article class="project">
+        <div class="project__num">03</div>
+        <h3>Kost- &amp; makrokalkylator</h3>
+        <p>Ett verktyg som räknar ut dagligt kaloribehov och makrofördelning utifrån mål (bulk, cut eller underhåll).</p>
+        <a href="#" class="project__link">Visa projekt →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section class="section section--alt" id="kontakt">
+    <div class="section__header">
+      <span class="section__index">04</span>
+      <h2>Kontakt</h2>
+    </div>
+    <div class="contact">
+      <p class="contact__text">
+        Vill du komma i kontakt med mig? Fyll i formuläret eller hör av dig direkt via mejl.
+      </p>
+      <form class="contact__form" id="contactForm">
+        <div class="field">
+          <label for="name">Namn</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">E-post</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Meddelande</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Skicka</button>
+        <p class="contact__status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Tim Lindberg. Byggd med HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
