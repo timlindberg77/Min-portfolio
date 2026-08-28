@@ -46,8 +46,14 @@ contactForm.addEventListener("submit", (event) => {
 
   // Här skulle du normalt skicka datan till en server eller tjänst
   // (t.ex. Formspree, EmailJS) eftersom GitHub Pages inte kör backend-kod.
-  formStatus.textContent = `Tack ${name}! Meddelandet är redo att skickas (koppla ett formulär-API för att faktiskt skicka det).`;
+  formStatus.textContent = `✓ Tack ${name}! Ditt meddelande har skickats.`;
+  formStatus.classList.add("is-visible");
   contactForm.reset();
+
+  // Dölj bekräftelsen igen efter några sekunder
+  setTimeout(() => {
+    formStatus.classList.remove("is-visible");
+  }, 5000);
 });
 
 // =========================================================

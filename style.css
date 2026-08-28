@@ -359,6 +359,16 @@ h1, h2, h3 {
   font-size: 0.88rem;
   color: var(--accent);
   min-height: 1.2em;
+  padding: 0;
+  border-radius: var(--radius);
+  transition: padding 0.2s ease, background 0.2s ease;
+}
+
+.contact__status.is-visible {
+  padding: 0.7rem 0.9rem;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  font-weight: 500;
 }
 
 /* =========================================================
