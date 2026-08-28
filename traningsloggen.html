@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Träningsloggen — Tim Lindberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">TL</a>
+      <nav class="nav__links">
+        <a href="index.html">Hem</a>
+        <a href="index.html#projekt">Projekt</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section__header">
+      <span class="section__index">02</span>
+      <h2>Träningsloggen</h2>
+    </div>
+
+    <p class="about__text" style="max-width:70ch;">
+      Ett litet verktyg (byggt med HTML, CSS och JavaScript) för att logga
+      vikter och reps mellan träningspass. Tanken är enkel:
+      <strong>progressiv överbelastning</strong> går inte att sköta på
+      minnet — utan en logg vet man inte om man faktiskt blir starkare
+      vecka för vecka.
+    </p>
+
+    <div class="about" style="margin-top:2.5rem;">
+      <div>
+        <h3 style="font-size:1.2rem; margin-bottom:0.8rem;">Vad loggen sparar</h3>
+        <p class="about__text">
+          Övning, vikt, reps och antal set per pass — så att jag kan gå
+          tillbaka och se exakt vad jag lyfte förra veckan innan jag börjar
+          samma övning igen.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:1.2rem; margin-bottom:0.8rem;">Varför det spelar roll</h3>
+        <p class="about__text">
+          Om jag inte vet vad jag lyfte förra gången, vet jag inte om jag
+          ska öka vikten, lägga till en rep, eller hålla mig kvar. Loggen
+          gör progressionen synlig istället för en gissning.
+        </p>
+      </div>
+    </div>
+
+    <p style="margin-top:2.5rem;">
+      <a href="index.html" class="btn btn--ghost">← Tillbaka till startsidan</a>
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Tim Lindberg. Byggd med HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

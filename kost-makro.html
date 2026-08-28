@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kost- & makrokalkylator — Tim Lindberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">TL</a>
+      <nav class="nav__links">
+        <a href="index.html">Hem</a>
+        <a href="index.html#projekt">Projekt</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section__header">
+      <span class="section__index">03</span>
+      <h2>Kost- &amp; makrokalkylator</h2>
+    </div>
+
+    <p class="about__text" style="max-width:70ch;">
+      Ett verktyg som räknar ut dagligt kaloribehov och makrofördelning
+      utifrån mål (bulk, cut eller underhåll). Istället för att gissa bygger
+      kalkylatorn upp kosten <strong>ett makro i taget</strong> — protein,
+      fett och kolhydrater sätts var för sig baserat på kroppsvikt, och det
+      som blir kvar av kalorimålet fylls sedan ut.
+    </p>
+
+    <div class="about" style="margin-top:2.5rem;">
+      <div>
+        <h3 style="font-size:1.2rem; margin-bottom:0.8rem;">1. Protein</h3>
+        <p class="about__text">
+          Sätts först eftersom det är viktigast för att bygga och behålla
+          muskelmassa. Beräknas som ett antal gram protein per kilo kroppsvikt,
+          oavsett om målet är bulk eller cut.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:1.2rem; margin-bottom:0.8rem;">2. Fett</h3>
+        <p class="about__text">
+          Sätts därefter, också baserat på kroppsvikt (gram fett per kilo
+          kroppsvikt), för att täcka behovet av hormonproduktion och
+          allmän hälsa.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:1.2rem; margin-bottom:0.8rem;">3. Kolhydrater</h3>
+        <p class="about__text">
+          Räknas också fram utifrån kroppsvikt och fyller sedan ut resten
+          av kalorimålet — kolhydrater är det som justeras mest beroende
+          på om målet är bulk, cut eller underhåll.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:1.2rem; margin-bottom:0.8rem;">4. Totala kalorier</h3>
+        <p class="about__text">
+          Summan av protein, fett och kolhydrater (omräknat till kalorier)
+          blir det totala kaloriintaget — snarare än att kalorierna sätts
+          först och makrona fördelas godtyckligt efteråt.
+        </p>
+      </div>
+    </div>
+
+    <p class="about__text" style="max-width:70ch; margin-top:2rem;">
+      Fördelen med att bygga upp kosten på det här sättet är att den
+      anpassar sig automatiskt efter hur mycket jag väger — går vikten
+      upp eller ner justeras alla tre makron, inte bara den totala
+      kalorisiffran.
+    </p>
+
+    <p style="margin-top:2.5rem;">
+      <a href="index.html" class="btn btn--ghost">← Tillbaka till startsidan</a>
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Tim Lindberg. Byggd med HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
